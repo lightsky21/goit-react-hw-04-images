@@ -50,10 +50,11 @@ export function App()  {
     setShowModal(prevState => !prevState)
   }
   
-  const onShowModal = (largeImageURL, tags) => {
+  const onShowModal = ({ largeImageURL, tags }) => {
     toggleModal();
     setLargeImageURL(largeImageURL);
     setTags(tags);
+
 }
 
   
